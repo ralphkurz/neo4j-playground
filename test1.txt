@@ -1,2 +1,8 @@
+//setup
+[source,cypher]
+----
 CREATE (a:Job { title:"Job 1" })-[r:CATEGORY]->(c:Category { name:"Cat1" })
 RETURN a
+----
+
+//graph
