@@ -1,0 +1,1 @@
+CREAATE (a:Job { title:"Job 1" })-[r:CATEGORY]->(c:Category { name:"Cat1" })
