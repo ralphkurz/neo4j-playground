@@ -1,9 +1,9 @@
 //setup
 [source,cypher]
 ----
-CREATE (a:Job { title:"Job 1" })-[r:CATEGORY]->(c:Category { name:"Cat 1" })
-CREATE (a1:Job { title:"Job 2" })-[r1:CATEGORY]->(c1:Category { name:"Cat 2" })
-CREATE (a2:Job { title:"Job 3" })-[r2:CATEGORY]->(c:Category { name:"Cat 1" })
+MATCH (a:Job { title:"Job 1" })-[r:CATEGORY]->(c:Category { name:"Cat 1" }), 
+(a1:Job { title:"Job 2" })-[r:CATEGORY]->(c1:Category { name:"Cat 2" }),
+(a2:Job { title:"Job 3" })-[r:CATEGORY]->(c:Category { name:"Cat 1" })
 RETURN a, a1, a2
 ----
 
