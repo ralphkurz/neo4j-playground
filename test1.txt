@@ -1,8 +1,8 @@
 //setup
 [source,cypher]
 ----
-MERGE (a:Job { title:"Job 1" })-[r:CATEGORY]->(c:Category { name:"Cat 1" }),
-(a1:Job { title:"Job 2" })-[r1:CATEGORY]->(c1:Category { name:"Cat 2" }),
+MERGE (a:Job { title:"Job 1" })-[r:CATEGORY]->(c:Category { name:"Cat 1" })
+(a1:Job { title:"Job 2" })-[r1:CATEGORY]->(c1:Category { name:"Cat 2" })
 (a2:Job { title:"Job 3" })-[r2:CATEGORY]->(c:Category { name:"Cat 1" })
 RETURN a, a1, a2
 ----
